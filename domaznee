@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+void draw_triangle(int height) {
+    for (int i = 1; i <= height; i++) {
+        cout << string(height - i, ' ') << string(2 * i - 1, '*') << endl;
+    }
+}
+
+int main() {
+    int height;
+    cout << "Введите высоту треугольника: ";
+    cin >> height;
+    draw_triangle(height);
+    return 0;
+}
